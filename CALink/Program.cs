@@ -1,5 +1,7 @@
 ﻿using CALink.Application.Interfaces.Common_Interface;
+using CALink.Application.Interfaces.Super_Admin_Interface;
 using CALink.Application.Services.Common_Service;
+using CALink.Application.Services.Super_Admin_Service;
 using CALink.Infrastructure.Persistence;
 using CALink.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -18,11 +20,18 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Add services to the container.
 
+//helper calss
 builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddSingleton<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddTransient<IEmailService, EmailService>();
+
+// Application Services
+builder.Services.AddScoped<IAppUserService, AppUserService>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
+
 
 
 //builder.Services.AddScoped<IAppUserService, AppUserService>();

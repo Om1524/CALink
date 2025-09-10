@@ -17,3 +17,4 @@ D:\CALink_WebAPI\CALink\CALink.Infrastructure\obj\Debug\net8.0\CALink.Infrastruc
 D:\CALink_WebAPI\CALink\CALink.Infrastructure\obj\Debug\net8.0\ref\CALink.Infrastructure.dll
 D:\CALink_WebAPI\CALink\CALink.Infrastructure\bin\Debug\net8.0\CALink.Application.dll
 D:\CALink_WebAPI\CALink\CALink.Infrastructure\bin\Debug\net8.0\CALink.Application.pdb
+D:\CALink_WebAPI\CALink\CALink.Infrastructure\obj\Debug\net8.0\CALink.Infrastructure.sourcelink.json

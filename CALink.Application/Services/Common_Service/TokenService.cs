@@ -79,5 +79,31 @@ namespace CALink.Application.Services.Common_Service
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
+        public AdminTokenPayloadDto GetAdminTokenPayload()
+        {
+            var user = _httpContextAccessor.HttpContext?.User;
+            if (user == null)
+                throw new UnauthorizedAccessException("User context is not available.");
+
+            var userIdStr = user.FindFirst("uid")?.Value;
+            if (!Guid.TryParse(userIdStr, out var userId))
+                throw new UnauthorizedAccessException("Invalid or missing user ID in token.");
+
+            var firstName = user.FindFirst("firstname")?.Value;
+            var lastName = user.FindFirst("lastname")?.Value;
+            var email = user.FindFirst("email")?.Value
+                        ?? user.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(email))
+                throw new UnauthorizedAccessException("Invalid or missing email in token.");
+
+            return new AdminTokenPayloadDto
+            {
+                UserId = userId,
+                Email = email,
+                FirstName = firstName ?? string.Empty,
+                LastName = lastName ?? string.Empty
+            };
+        }
     }
 }

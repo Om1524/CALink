@@ -15,3 +15,4 @@ D:\CALink_WebAPI\CALink\CALink.Application\obj\Debug\net8.0\refint\CALink.Applic
 D:\CALink_WebAPI\CALink\CALink.Application\obj\Debug\net8.0\CALink.Application.pdb
 D:\CALink_WebAPI\CALink\CALink.Application\obj\Debug\net8.0\CALink.Application.genruntimeconfig.cache
 D:\CALink_WebAPI\CALink\CALink.Application\obj\Debug\net8.0\ref\CALink.Application.dll
+D:\CALink_WebAPI\CALink\CALink.Application\obj\Debug\net8.0\CALink.Application.sourcelink.json

@@ -11,6 +11,6 @@ namespace CALink.Application.Interfaces.Common_Interface
     {
 
         string GenerateTokenAdmin(AdminTokenPayloadDto adminTokenPayloadDto);
-
+        AdminTokenPayloadDto GetAdminTokenPayload();
     }
 }

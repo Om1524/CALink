@@ -16,6 +16,7 @@ namespace CALink.Infrastructure.Persistence
         }
 
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<Company> Companies { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
