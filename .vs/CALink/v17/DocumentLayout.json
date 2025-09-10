@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\CALink_WebAPI\\CALink\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|d:\\calink_webapi\\calink\\calink.domain\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|solutionrelative:calink.domain\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Domain\\Common\\ApiResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Domain\\Common\\ApiResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\Migrations\\20250909091140_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,100 +35,100 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\Migrations\\20250909085731_InitialSchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|d:\\calink_webapi\\calink\\calink.domain\\common\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|solutionrelative:calink.domain\\common\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Domain\\Common\\Messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Domain\\Common\\Messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|d:\\calink_webapi\\calink\\calink\\controllers\\common_controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|solutionrelative:calink\\controllers\\common_controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink\\Controllers\\Common_Controller\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink\\Controllers\\Common_Controller\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\interfaces\\common_interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\interfaces\\common_interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\Interfaces\\Common_Interface\\IRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\Interfaces\\Common_Interface\\IRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\services\\common_service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\services\\common_service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\Services\\Common_Service\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\Services\\Common_Service\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\dtos\\common_dto\\tokenpayloaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\dtos\\common_dto\\tokenpayloaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\DTOs\\Common_Dto\\TokenPayloadDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\DTOs\\Common_Dto\\TokenPayloadDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\interfaces\\common_interface\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\interfaces\\common_interface\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\Interfaces\\Common_Interface\\ITokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\Interfaces\\Common_Interface\\ITokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|d:\\calink_webapi\\calink\\calink.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|solutionrelative:calink.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\Repositories\\Repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\Repositories\\Repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\services\\common_service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\services\\common_service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\Services\\Common_Service\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\Services\\Common_Service\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\interfaces\\common_interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\interfaces\\common_interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\Interfaces\\Common_Interface\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\Interfaces\\Common_Interface\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|d:\\calink_webapi\\calink\\calink.infrastructure\\migrations\\20250909091247_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|solutionrelative:calink.infrastructure\\migrations\\20250909091247_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\Migrations\\20250909091247_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\Migrations\\20250909091247_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|d:\\calink_webapi\\calink\\calink\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|solutionrelative:calink\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|d:\\calink_webapi\\calink\\calink\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|solutionrelative:calink\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\dtos\\common_dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\dtos\\common_dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\DTOs\\Common_Dto\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\DTOs\\Common_Dto\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\dtos\\super_admin_dto\\appuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\dtos\\super_admin_dto\\appuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\DTOs\\Super_Admin_Dto\\AppUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\DTOs\\Super_Admin_Dto\\AppUserDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|d:\\calink_webapi\\calink\\calink.infrastructure\\dataseederconstant\\guidconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|solutionrelative:calink.infrastructure\\dataseederconstant\\guidconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\DataSeederConstant\\GuidConstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\DataSeederConstant\\GuidConstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|d:\\calink_webapi\\calink\\calink.infrastructure\\dataseed\\appuserdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|solutionrelative:calink.infrastructure\\dataseed\\appuserdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\DataSeed\\AppUserData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\DataSeed\\AppUserData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|d:\\calink_webapi\\calink\\calink\\calink.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{13A849F6-9708-4C0E-B27A-8BCC911DA997}|CALink\\CALink.API.csproj|solutionrelative:calink\\calink.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink\\CALink.API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink\\CALink.API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|d:\\calink_webapi\\calink\\calink.domain\\entities\\super_admin\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|solutionrelative:calink.domain\\entities\\super_admin\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Domain\\Entities\\Super_Admin\\AppUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Domain\\Entities\\Super_Admin\\AppUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|d:\\calink_webapi\\calink\\calink.domain\\entities\\user_management\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|solutionrelative:calink.domain\\entities\\user_management\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Domain\\Entities\\User_Management\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Domain\\Entities\\User_Management\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|d:\\calink_webapi\\calink\\calink.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|solutionrelative:calink.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\Persistence\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\Persistence\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|d:\\calink_webapi\\calink\\calink.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|solutionrelative:calink.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Domain\\Entities\\Common\\BaseEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Domain\\Entities\\Common\\BaseEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|d:\\calink_webapi\\calink\\calink.infrastructure\\calink.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A9D67CA4-95F5-4C9A-A640-AB34E7FD6CEF}|CALink.Infrastructure\\CALink.Infrastructure.csproj|solutionrelative:calink.infrastructure\\calink.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Infrastructure\\CALink.Infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Infrastructure\\CALink.Infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|d:\\calink_webapi\\calink\\calink.application\\calink.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AFF7747D-6271-4530-88E2-643194102EC7}|CALink.Application\\CALink.Application.csproj|solutionrelative:calink.application\\calink.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Application\\CALink.Application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Application\\CALink.Application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|d:\\calink_webapi\\calink\\calink.domain\\calink.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{10E0F4A7-034A-4AD3-8039-31A347356F67}|CALink.Domain\\CALink.Domain.csproj|solutionrelative:calink.domain\\calink.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CALink_WebAPI\\CALink\\CALink.Domain\\CALink.Domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CALink.Domain\\CALink.Domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -151,10 +151,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -272,7 +268,7 @@
               "RelativeDocumentMoniker": "CALink.Domain\\Common\\ApiResponse.cs",
               "ToolTip": "D:\\CALink_WebAPI\\CALink\\CALink.Domain\\Common\\ApiResponse.cs",
               "RelativeToolTip": "CALink.Domain\\Common\\ApiResponse.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T09:26:48.961Z",
               "EditorCaption": ""
