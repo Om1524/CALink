@@ -4,25 +4,40 @@ using CALink.Application.Interfaces.Common_Interface;
 using CALink.Application.Interfaces.Super_Admin_Interface;
 using CALink.Domain.Common;
 using CALink.Domain.Entities.Super_Admin;
+using CALink.Domain.Entities.User_Management;
+using LinqKit;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using static CALink.Domain.Enums.Enums;
 
 namespace CALink.Application.Services.Super_Admin_Service
 {
     public class CompanyService : ICompanyService
     {
         private readonly IRepository<Company> _companyRepository;
+        private readonly IRepository<User> _userRepository;
+        private readonly IRepository<Role> _roleRepository;
+        //private readonly IDefaultMetadataSeeder _defaultMetadataSeeder;
+        private readonly IEmailService _emailService;
         private readonly ITokenService _tokenService;
+        private readonly IConfiguration _config;
 
-        public CompanyService(IRepository<Company> companyRepository, ITokenService tokenService)
+        public CompanyService(IRepository<Company> companyRepository, ITokenService tokenService, IRepository<User> userRepository,
+            IRepository<Role> roleRepository, IConfiguration config, IEmailService emailService)
         {
             _companyRepository = companyRepository;
+            _userRepository = userRepository;
+            _roleRepository = roleRepository;
             _tokenService = tokenService;
+            //_defaultMetadataSeeder = defaultMetadataSeeder;
+            _emailService = emailService;
+            _config = config;
         }
 
         public async Task<ApiResponse<CompanyResponseDto>> Create(CompanyRequestDto companyRequestDto)
@@ -97,6 +112,87 @@ namespace CALink.Application.Services.Super_Admin_Service
             };
 
             await _companyRepository.AddAsync(company);
+
+            //await _defaultMetadataSeeder.SeedAsync(company.Id);
+            // ✅ Check if SuperAdmin role exists for this company
+            var predicate = PredicateBuilder.New<Role>(true);
+            predicate = predicate.And(role => role.RoleName == "SuperAdmin" && role.CompanyId == company.Id);
+
+            Role? existingSuperAdminRole = (await _roleRepository.FindAsync(predicate)).FirstOrDefault();
+
+            Guid superAdminRoleId;
+
+            if (existingSuperAdminRole != null)
+            {
+                superAdminRoleId = existingSuperAdminRole.Id;
+            }
+            else
+            {
+                // Create SuperAdmin role for the new company
+                var superAdminRole = new Role
+                {
+                    Id = Guid.NewGuid(),
+                    CompanyId = company.Id,
+                    RoleName = "SuperAdmin",
+                    Description = "Super Admin Role with full permissions",
+                    Status = RoleStatus.Active, // Active
+                    CreatedBy = tokenPayload.UserId,
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedBy = tokenPayload.UserId,
+                    UpdatedAt = DateTime.UtcNow
+                };
+                await _roleRepository.AddAsync(superAdminRole);
+                superAdminRoleId = superAdminRole.Id;
+            }
+
+            if(companyRequestDto.Users != null && companyRequestDto.Users.Any())
+            {
+                foreach (var userDto in companyRequestDto.Users)
+                {
+                    //var existingUser = await _userRepository.FindAsync(u => u.Email == userDto.Email || u.MobileNumber == userDto.MobileNumber);
+                    //if (existingUser.Any())
+                    //{
+                    //    continue; // Skip existing users
+                    //}
+                    string generatedPassword = PasswordHelper.PasswordGenerator();
+                    var user = new User
+                    {
+                        Id = Guid.NewGuid(),
+                        CompanyId = company.Id,
+                        FirstName = userDto.FirstName,
+                        LastName = userDto.LastName,
+                        Email = userDto.Email,
+                        MobileNumber = userDto.MobileNumber,
+                        Password = generatedPassword, // Default password, should be changed on first login
+                        RoleId = superAdminRoleId, // Assign SuperAdmin role
+                        Status = (UserStatus)userDto.status,                        
+                        CreatedBy = tokenPayload.UserId,
+                        CreatedAt = DateTime.UtcNow
+                    };
+                    await _userRepository.AddAsync(user);
+
+                    // ✅ Determine LoginUrl based on connection string
+                    var connectionString = _config.GetConnectionString("DefaultConnection");
+                    string loginUrl = EnvironmentUrls.GetUserLoginUrl(connectionString);
+
+                    string emailBody = EmailTemplateHelper.GetCompanyAdminAccountCreationEmailBody(
+                        user.FirstName, 
+                        user.Email, 
+                        companyRequestDto.Code,
+                        generatedPassword, 
+                        loginUrl
+                    );
+
+                    // Send email to the user with their credentials
+                    await _emailService.SendAsync( new EmailDto
+                    {
+                        To = user.Email,
+                        Subject = "Welcome to CALink - Your Admin Account Has Been Created",
+                        Body = emailBody,
+                        IsBodyHtml = true
+                    });
+                }
+            }
 
             var companyResponseDto = new CompanyResponseDto
             {

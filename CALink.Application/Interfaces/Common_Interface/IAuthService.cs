@@ -11,5 +11,7 @@ namespace CALink.Application.Interfaces.Common_Interface
     public interface IAuthService
     {
         Task<ApiResponse<AppUserLoginResponseDto>> LoginAdmin(AppUserLoginRequestDto appUserLoginRequestDto);
+
+        Task<ApiResponse<LoginResponseDto>> Login(LoginUserDto loginUserDto);
     }
 }

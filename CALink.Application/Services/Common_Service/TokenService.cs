@@ -80,6 +80,51 @@ namespace CALink.Application.Services.Common_Service
             return tokenHandler.WriteToken(token);
         }
 
+        public string GenerateTokenUser(TokenPayloadDto tokenPayloadDto)
+        {
+            var jwtSettings = new JwtSettings
+            {
+                Secret = _config.GetSection("JwtSettings:Secret").Value,
+                Issuer = _config.GetSection("JwtSettings:Issuer").Value,
+                Audience = _config.GetSection("JwtSettings:Audience").Value,
+                ExpirationHours = int.TryParse(_config.GetSection("JwtSettings:ExpirationHours").Value, out var expiration) ? expiration : 24
+            };
+
+            // Validate essential settings are present
+            var secret = jwtSettings.Secret ?? throw new ArgumentNullException("JwtSettings:Secret not configured.");
+            var issuer = jwtSettings.Issuer ?? throw new ArgumentNullException("JwtSettings:Issuer not configured.");
+            var audience = jwtSettings.Audience ?? throw new ArgumentNullException("JwtSettings:Audience not configured.");
+
+            var key = Encoding.ASCII.GetBytes(secret);
+
+            var claims = new List<Claim>
+            {
+                        // Standard JWT claims
+                        new Claim(JwtRegisteredClaimNames.Sub, tokenPayloadDto.UserId.ToString()),
+                        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                        new Claim("uid", tokenPayloadDto.UserId.ToString()),
+                        new Claim("cid", tokenPayloadDto.CompanyId.ToString()),
+                        new Claim("firstname", tokenPayloadDto.FirstName ?? string.Empty),
+                        new Claim("code", tokenPayloadDto.Code.ToString()),
+                        new Claim("email", tokenPayloadDto.Email ?? string.Empty),                     
+            };
+
+            // Configure the token descriptor
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.UtcNow.AddMinutes(jwtSettings.ExpirationHours), // Token expiration time
+                Issuer = issuer,
+                Audience = audience,
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+
+
         public AdminTokenPayloadDto GetAdminTokenPayload()
         {
             var user = _httpContextAccessor.HttpContext?.User;
@@ -103,6 +148,45 @@ namespace CALink.Application.Services.Common_Service
                 Email = email,
                 FirstName = firstName ?? string.Empty,
                 LastName = lastName ?? string.Empty
+            };
+        }
+
+        public TokenPayloadDto GetUserTokenPayload()
+        {
+            var user = _httpContextAccessor.HttpContext?.User;
+            if (user == null)
+            {
+                throw new UnauthorizedAccessException("User context is not available.");
+            }
+            var companyIdStr = user.FindFirst("cid")?.Value;
+
+            if (!Guid.TryParse(companyIdStr, out var companyId))
+            {
+                throw new UnauthorizedAccessException("Invalid or missing company ID in token.");
+            }
+
+            var userIdStr = user.FindFirst("uid")?.Value;
+            if (!Guid.TryParse(userIdStr, out var userId))
+            {
+                throw new UnauthorizedAccessException("Invalid or missing user ID in token.");
+            }
+
+            var code = user.FindFirst("code")?.Value;
+            if (string.IsNullOrEmpty(code))
+            {
+                throw new UnauthorizedAccessException("Invalid or missing code in token.");
+            }
+
+            var firstName = user.FindFirst("firstname")?.Value;
+            var email = user.FindFirst("email")?.Value; // Optional: Get email if needed           
+
+            return new TokenPayloadDto
+            {
+                UserId = userId,
+                CompanyId = companyId,
+                FirstName = firstName,
+                Code = code,
+                Email = email,
             };
         }
     }

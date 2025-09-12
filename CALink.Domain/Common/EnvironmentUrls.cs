@@ -15,6 +15,13 @@ namespace CALink.Domain.Common
                 : "";
         }
 
+        public static string GetUserLoginUrl(string connectionString)
+        {
+            return IsLocal(connectionString)
+                ? "http://localhost:4300/login"
+                : "";
+        }
+
         private static bool IsLocal(string connectionString)
         {
             return connectionString.Contains("CALinkDb", StringComparison.OrdinalIgnoreCase);

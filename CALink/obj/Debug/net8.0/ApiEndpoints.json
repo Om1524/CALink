@@ -161,6 +161,32 @@
     ]
   },
   {
+    "ContainingType": "CALink.API.Controllers.Common_Controller.AuthController",
+    "Method": "LoginUser",
+    "RelativePath": "api/Auth/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginUserDto",
+        "Type": "CALink.Application.DTOs.Common_Dto.LoginUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CALink.Domain.Common.ApiResponse\u00601[[CALink.Application.DTOs.Common_Dto.LoginResponseDto, CALink.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "CALink.API.Controllers.Super_Admin_Controller.CompanyController",
     "Method": "Create",
     "RelativePath": "api/Company",

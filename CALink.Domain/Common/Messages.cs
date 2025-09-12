@@ -36,6 +36,8 @@ namespace CALink.Domain.Common
         public const string CompanyRetrievedSuccess = "Company retrieved successfully";
         public const string CompaniesRetrievedSuccess = "Companies retrieved successfully.";
         public static string CompanyDeleted(string name) => $"{name} Deleted successfully";
-        public const string CompanyNotFound = "Company not found";        
+        public const string CompanyNotFound = "Company not found";    
+        public const string CompanyUnActive = "Company is not active";
+        public const string IncorrectSecratCode = "Incorrect secrat code";
     }
 }

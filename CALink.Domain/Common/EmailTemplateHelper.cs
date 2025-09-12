@@ -54,5 +54,31 @@ namespace CALink.Domain.Common
             </html>";
         }
 
+        public static string GetCompanyAdminAccountCreationEmailBody(string firstName, string email, string code, string temporaryPassword, string loginUrl)
+        {
+            return $@"
+            <html>
+            <body style='font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif; color:#333; font-size:16px; line-height:1.6;'>
+                <p>Dear {firstName},</p>
+                <p>Welcome to <strong>CALink</strong>! Your <strong>Company Admin</strong> account has been successfully created.</p>
+                <p><strong>Login Credentials:</strong></p>
+                <ul style='list-style:none; padding-left:0;'>
+                    <li><strong>Email:</strong> <code style='background:#f4f4f4; padding:2px 6px; border-radius:4px;'>{email}</code></li>
+                    <li><strong>Company Code:</strong> <code style='background:#f4f4f4; padding:2px 6px; border-radius:4px;'>{code}</code></li>
+                    <li><strong>Temporary Password:</strong> <code style='background:#f4f4f4; padding:2px 6px; border-radius:4px;'>{temporaryPassword}</code></li>
+                </ul>
+                <p>As a Company Admin, you have the ability to manage users and settings within your organization on CALink.</p>
+                <p>Please log in to your account and change your password immediately to ensure security.</p>
+                 <p>You can continue logging in at 
+                            <a href='{loginUrl}' style='color:#1a73e8; text-decoration:none;'>
+                                CALink Login
+                            </a> 
+                            using your email.
+                        </p>
+                <p>Best regards,<br/>
+                <strong>CALink Team</strong></p>
+            </body>
+            </html>";
+        }
     }
 }

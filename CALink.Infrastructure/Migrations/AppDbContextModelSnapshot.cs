@@ -162,6 +162,163 @@ namespace CALink.Infrastructure.Migrations
 
                     b.ToTable("Companies");
                 });
+
+            modelBuilder.Entity("CALink.Domain.Entities.User_Management.Role", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("Id");
+
+                    b.Property<Guid>("CompanyId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CompanyId");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("CreatedAt");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CreatedBy");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)")
+                        .HasColumnName("Description");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("RoleName");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int")
+                        .HasColumnName("Status");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("UpdatedAt");
+
+                    b.Property<Guid>("UpdatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("UpdatedBy");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("CALink.Domain.Entities.User_Management.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("Id");
+
+                    b.Property<Guid>("CompanyId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CompanyId");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("CreatedAt");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CreatedBy");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("Email");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("FirstName");
+
+                    b.Property<bool>("IsFirstLogin")
+                        .HasColumnType("boolean")
+                        .HasColumnName("IsFirstLogin");
+
+                    b.Property<DateTime?>("LastLogin")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("LastLogin");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("LastName");
+
+                    b.Property<string>("MobileNumber")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)")
+                        .HasColumnName("MobileNumber");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("varchar(300)")
+                        .HasColumnName("Password");
+
+                    b.Property<Guid?>("RoleId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("RoleId");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int")
+                        .HasColumnName("Status");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("UpdatedAt");
+
+                    b.Property<Guid>("UpdatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("UpdatedBy");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("CALink.Domain.Entities.User_Management.Role", b =>
+                {
+                    b.HasOne("CALink.Domain.Entities.Super_Admin.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("CALink.Domain.Entities.User_Management.User", b =>
+                {
+                    b.HasOne("CALink.Domain.Entities.Super_Admin.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CALink.Domain.Entities.User_Management.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId");
+
+                    b.Navigation("Company");
+
+                    b.Navigation("Role");
+                });
 #pragma warning restore 612, 618
         }
     }

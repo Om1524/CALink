@@ -24,5 +24,12 @@ namespace CALink.API.Controllers.Common_Controller
             var response = await _authService.LoginAdmin(appUserLoginRequestDto);
             return response;
         }
+
+        [HttpPost("LoginUser")]    
+        public async Task<ApiResponse<LoginResponseDto>> LoginUser([FromBody] LoginUserDto loginUserDto)
+        {
+            var response = await _authService.Login(loginUserDto);
+            return response;
+        }
     }
 }

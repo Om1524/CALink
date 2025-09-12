@@ -10,7 +10,7 @@ namespace CALink.Application.DTOs.Common_Dto
     {
         public required Guid UserId { get; set; }
         public required Guid CompanyId { get; set; }
-        public required string UserType { get; set; }
+        public required string FirstName { get; set; }
         public required string Code { get; set; }
         public required string Email { get; set; }
     }
