@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CALink.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dcfbad5c35b85f5e99020048a641ce8d2b86e01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+446da8eedaa810821cd60825bc2152e7602683d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CALink.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CALink.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
