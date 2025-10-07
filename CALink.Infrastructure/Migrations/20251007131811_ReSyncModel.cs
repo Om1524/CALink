@@ -147,11 +147,6 @@ namespace CALink.Infrastructure.Migrations
                         principalColumn: "Id");
                 });
 
-            migrationBuilder.InsertData(
-                table: "AppUsers",
-                columns: new[] { "Id", "CreatedAt", "CreatedBy", "Email", "FirstName", "IsActive", "LastLogin", "LastName", "Password", "ProfilePictureUrl", "RefreshToken", "UpdatedAt", "UpdatedBy" },
-                values: new object[] { new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96"), new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96"), "kanha@gmail.com", "Kanha", true, null, "Yadav", "Admin@123", null, null, new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96") });
-
             migrationBuilder.CreateIndex(
                 name: "IX_AppUsers_Email",
                 table: "AppUsers",

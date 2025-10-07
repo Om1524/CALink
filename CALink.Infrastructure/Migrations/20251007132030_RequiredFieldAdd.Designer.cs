@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CALink.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251007131359_ReSyncModel")]
-    partial class ReSyncModel
+    [Migration("20251007132030_RequiredFieldAdd")]
+    partial class RequiredFieldAdd
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -144,21 +144,6 @@ namespace CALink.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("AppUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96"),
-                            CreatedAt = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedBy = new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96"),
-                            Email = "kanha@gmail.com",
-                            FirstName = "Kanha",
-                            IsActive = true,
-                            LastName = "Yadav",
-                            Password = "Admin@123",
-                            UpdatedAt = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            UpdatedBy = new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96")
-                        });
                 });
 
             modelBuilder.Entity("CALink.Domain.Entities.Super_Admin.Company", b =>

@@ -45,7 +45,7 @@ namespace CALink.Domain.Entities.Customer
         public string Email { get; set; } = string.Empty;
 
         [Column("BirthDate", TypeName = "timestamp with time zone")]
-        //[Required]
+        [Required]
         public DateTime? BirthDate { get; set; }
 
         [Column("Gender", TypeName = "varchar(20)")]
