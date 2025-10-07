@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CALink.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dcfbad5c35b85f5e99020048a641ce8d2b86e01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d47ec7165512b6db07e0ecbf61763a9aaff1bce")]
 [assembly: System.Reflection.AssemblyProductAttribute("CALink.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CALink.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

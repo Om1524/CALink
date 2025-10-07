@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CALink.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250912101925_AddUserTable")]
-    partial class AddUserTable
+    [Migration("20251007131359_ReSyncModel")]
+    partial class ReSyncModel
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,59 @@ namespace CALink.Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("CALink.Domain.Entities.Service_Category.ServiceCategory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("Id");
+
+                    b.Property<string>("CategoryCode")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("CategoryCode");
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("CategoryName");
+
+                    b.Property<Guid>("CompanyId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CompanyId");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("CreatedAt");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CreatedBy");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("varchar(500)")
+                        .HasColumnName("Description");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int")
+                        .HasColumnName("Status");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("UpdatedAt");
+
+                    b.Property<Guid>("UpdatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("UpdatedBy");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("ServiceCategory");
+                });
 
             modelBuilder.Entity("CALink.Domain.Entities.Super_Admin.AppUser", b =>
                 {
@@ -91,6 +144,21 @@ namespace CALink.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("AppUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96"),
+                            CreatedAt = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedBy = new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96"),
+                            Email = "kanha@gmail.com",
+                            FirstName = "Kanha",
+                            IsActive = true,
+                            LastName = "Yadav",
+                            Password = "Admin@123",
+                            UpdatedAt = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UpdatedBy = new Guid("82d13417-d15d-4b3c-9b87-766d3bf60c96")
+                        });
                 });
 
             modelBuilder.Entity("CALink.Domain.Entities.Super_Admin.Company", b =>
@@ -186,7 +254,6 @@ namespace CALink.Infrastructure.Migrations
                         .HasColumnName("CreatedBy");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(500)
                         .HasColumnType("varchar(500)")
                         .HasColumnName("Description");
 
@@ -249,7 +316,7 @@ namespace CALink.Infrastructure.Migrations
                         .HasColumnType("boolean")
                         .HasColumnName("IsFirstLogin");
 
-                    b.Property<DateTime?>("LastLogin")
+                    b.Property<DateTime>("LastLogin")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("LastLogin");
 
@@ -292,7 +359,18 @@ namespace CALink.Infrastructure.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("CALink.Domain.Entities.Service_Category.ServiceCategory", b =>
+                {
+                    b.HasOne("CALink.Domain.Entities.Super_Admin.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
                 });
 
             modelBuilder.Entity("CALink.Domain.Entities.User_Management.Role", b =>

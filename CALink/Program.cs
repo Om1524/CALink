@@ -1,6 +1,8 @@
 ﻿using CALink.Application.Interfaces.Common_Interface;
+using CALink.Application.Interfaces.Service_Category_Interface;
 using CALink.Application.Interfaces.Super_Admin_Interface;
 using CALink.Application.Interfaces.User_Management_Interface;
+using CALink.Application.Services.Category_Service;
 using CALink.Application.Services.Common_Service;
 using CALink.Application.Services.Super_Admin_Service;
 using CALink.Application.Services.User_Management_Service;
@@ -30,11 +32,13 @@ builder.Services.AddSingleton<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddTransient<IEmailService, EmailService>();
 
+
 // Application Services
 builder.Services.AddScoped<IAppUserService, AppUserService>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
 //builder.Services.AddScoped<IAppUserService, AppUserService>();
