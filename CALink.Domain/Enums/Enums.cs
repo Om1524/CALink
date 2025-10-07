@@ -20,6 +20,13 @@ namespace CALink.Domain.Enums
             Inactive = 0,
             Active = 1,
             //Deleted = 3
-        }        
+        }
+
+        public enum CategoryStatus
+        {
+            Inactive = 0,
+            Active = 1,
+            //Deleted = 3
+        }
     }
 }

@@ -39,5 +39,16 @@ namespace CALink.Domain.Common
         public const string CompanyNotFound = "Company not found";    
         public const string CompanyUnActive = "Company is not active";
         public const string IncorrectSecratCode = "Incorrect secrat code";
+
+        //Category Service
+        public static string CategoryCreate(string name) => $"{name} create successfully";
+        public static string CategoryUpdate(string name) => "{name} updated successfully";
+        public const string categoryRetriveedSuccess = "Category retrived successfully";
+        public const string CategoryRetrievedSuccess = "Categories retrived successfully";
+
+        public static string CategoryDeleted(string name) => $"{name} Deleted successfully";
+        public const string CategoryNotFound = "Category Not Found";
+        public const string CategoryUnActive = "Category is not active";
+        public const string IncorrectSecretCode = "Incorrect secret code";
     }
 }

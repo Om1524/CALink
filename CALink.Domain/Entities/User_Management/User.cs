@@ -13,6 +13,7 @@ using static CALink.Domain.Enums.Enums;
 
 namespace CALink.Domain.Entities.User_Management
 {
+    [Table("User")]
     public class User : BaseEntity
     {
         [Column("CompanyId", TypeName = "uuid")]
@@ -62,7 +63,7 @@ namespace CALink.Domain.Entities.User_Management
         public bool IsFirstLogin { get; set; } = true;
 
         [Column("LastLogin", TypeName = "timestamp with time zone")]
-        public DateTime? LastLogin { get; set; }
+        public DateTime LastLogin { get; set; }
 
     }
 }
